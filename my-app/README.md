@@ -8,8 +8,10 @@ As I seek continued professional development I want to have a polished online po
 
 This was also the first static site I've built using React and it was a satisfying project. 
 
-### Screenshots and Video
+### Screenshots
 <img width="1032" alt="image" src="https://user-images.githubusercontent.com/25040852/204049541-4b4132ed-58c3-41be-9f9e-5750662d6f94.png">
+<img width="582" alt="image" src="https://user-images.githubusercontent.com/25040852/204049645-81d158ff-19aa-4454-ab47-7e44edef778d.png">
+
 
 
 ## Deployed Site
