@@ -4,7 +4,7 @@ import { BsFillEnvelopeFill } from "react-icons/bs";
 
 function Footer() {
     return (
-        <div class="bg-violet-200 fixed bottom-0 right-0 left-0 flex flex-col pt-2">
+        <div class="bg-violet-200 fixed bottom-0 right-0 left-0 flex flex-col pt-2 rounded-md m-2">
             <div class="flex flex-wrap justify-center">
                 <a class="mx-3" href='https://www.linkedin.com/in/treavorwills/' target="_blank">
                     <FaLinkedin size="3em" color="black" title="Linkedin icon link to Treavor's Linkedin profile" />

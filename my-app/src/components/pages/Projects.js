@@ -52,11 +52,8 @@ function Projects() {
       ];
 
     return (
-        <div class="pt-10">
-            <h1>Portfolio</h1>
-            <div>
+        <div class="pt-10 pb-20">
                  <ProjectCard projects={projects} />
-            </div>
         </div>
     );
 }

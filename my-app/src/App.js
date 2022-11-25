@@ -7,6 +7,7 @@ import About from './components/pages/About';
 import Projects from './components/pages/Projects.js';
 import Contact from './components/pages/Contact';
 import Footer from './components/Footer';
+import NavBar from './components/NavBar';
 
 function App() {
 
@@ -14,15 +15,7 @@ function App() {
 
   return (
     <div>
-      <nav>
-        <ul>
-          <li><Link to="/ReactPortfolio">Home</Link></li>
-          <li><Link to="/ReactPortfolio/about">About</Link></li>
-          <li><Link to="/ReactPortfolio/projects">Projects</Link></li>
-          <li><Link to="/ReactPortfolio/contact">Contact</Link></li>
-        </ul>
-      </nav>
-
+      <NavBar />
     <Routes>
       <Route path="/ReactPortfolio" element={<Home />} />
       <Route path="/ReactPortfolio/about" element={<About />} />
