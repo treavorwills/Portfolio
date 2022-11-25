@@ -1,14 +1,22 @@
 import React from 'react';
+import AboutCard from '../AboutCard';
 
-function About() {
+export default function About() {
+
+    const aboutItems = [
+        {
+            "title": "one",
+            "text": "two"
+        },
+        {
+            "title": "three",
+            "text": "four"
+        },
+    ]
+
     return (
-        <div class="pt-10">
-            <h1>About</h1>
-            <div>
-                <p>About content</p>
-            </div>
+        <div class="flex mx-auto mt-10">
+            <AboutCard aboutItems={aboutItems} />
         </div>
     );
 }
-
-export default About;

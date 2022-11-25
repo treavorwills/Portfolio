@@ -6,7 +6,7 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Projects from './components/pages/Projects.js';
 import Contact from './components/pages/Contact';
-
+import Footer from './components/Footer';
 
 function App() {
 
@@ -29,6 +29,7 @@ function App() {
       <Route path="/ReactPortfolio/projects" element={<Projects />} />
       <Route path="/ReactPortfolio/contact" element={<Contact />} />
     </Routes>
+    <Footer />
     </div>
   );
 }
