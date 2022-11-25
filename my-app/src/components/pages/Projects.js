@@ -25,7 +25,7 @@ function Projects() {
         {
           "id": 3,
           "title": "Logan's List",
-          "src": "images/LogansList.png",
+          "src": "images/logansList.png",
           "alt": "Photo of Logan's List",
           "description": "Logan's List is a buy and sell application similar to Craigslist or KSL Classifieds. It was a project I collaborated. I primary worked on the back end to ensure our API routes worked as expected. This was a great project in which I learned a lot about running queries to populate a website and database management. Check it out!",
           "appLink": "https://aqueous-sea-47353.herokuapp.com/",

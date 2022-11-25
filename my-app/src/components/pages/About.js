@@ -23,7 +23,7 @@ export default function About() {
     return (
         <div class="flex flex-col mx-auto mt-5 pb-20">
             <div class="mx-auto">
-                <img src={process.env.PUBLIC_URL + '/images/fall.png'} class="h-48 rounded-xl w-full object-cover md:h-60 md:w-60"></img>
+                <img src={process.env.PUBLIC_URL + '/images/fall.png'} class="h-48 rounded-full w-full object-cover h-60 w-60"></img>
             </div>
             <AboutCard aboutItems={aboutItems} />
         </div>

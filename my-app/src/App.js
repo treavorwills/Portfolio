@@ -14,7 +14,7 @@ function App() {
   console.log("hello");
 
   return (
-    <div>
+    <div class="">
       <NavBar />
     <Routes>
       <Route path="/ReactPortfolio" element={<Home />} />
