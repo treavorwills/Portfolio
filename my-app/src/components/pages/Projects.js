@@ -48,6 +48,15 @@ function Projects() {
           "description": "This application provides guidance to users that are looking for a restaurant(s) in a specific location. I implemented changes to make the application more user friendly and worked on the API call to obtain and render search results.",
           "appLink": "https://benbushman98.github.io/cuddly-robot/",
           "repo": "https://github.com/benbushman98/cuddly-robot",
+        },
+        {
+          "id": 6,
+          "title": "Prep Starts Now: E-Commerce",
+          "src": "images/PrepStartsNow.png",
+          "alt": "Photo of Prep Starts Now E-Commerce Site",
+          "description": "This is a functional e-commerce site built using the MERN stack. It was an excellent learning opportunity that called for collaberation, team work, and implementation of MongoDB, Express, React and Node JS.",
+          "appLink": "http://www.prepstartsnow.com/",
+          "repo": "https://github.com/benbushman98/Prep-Start-Now",
         }
       ];
 
