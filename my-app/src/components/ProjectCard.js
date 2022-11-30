@@ -17,7 +17,7 @@ export default function ProjectCard(props) {
                                 <a href={project.appLink} target="_blank" class="flex no-underline hover:text-violet-700 text-slate-900 text-xl font-semibold">{project.title} <TbExternalLink size="1.5em"/></a>
                             </div>
                             <p class="mt-2 text-slate-600 text-md">{project.description}</p>
-                            <a href={project.appLink} class="flex align-middle mt-1 text-md leading-tight font-medium text-black no-underline hover:text-violet-700"><FaGithub size="2em"/><p class="ml-1 mt-2 hover:text-violet-700">View on Github</p></a>
+                            <a href={project.repo} target="_blank" class="flex align-middle mt-1 text-md leading-tight font-medium text-black no-underline hover:text-violet-700"><FaGithub size="2em"/><p class="ml-1 mt-2 hover:text-violet-700">View on Github</p></a>
                         </div>
                     </div>
                 </div>
