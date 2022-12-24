@@ -19,6 +19,7 @@ function NavBar() {
                         <li class="nav-item flex justify-end"><Link class="px-3 py-2 hover:opacity-75" to="/ReactPortfolio/about">About</Link></li>
                         <li class="nav-item flex justify-end"><Link class="px-3 py-2 flex items-center hover:opacity-75" to="/ReactPortfolio/projects">Projects</Link></li>
                         <li class="nav-item flex justify-end"><Link class="px-3 py-2 flex items-center hover:opacity-75" to="/ReactPortfolio/contact">Contact</Link></li>
+                        <li class="nav-item flex justify-end"><Link class="px-3 py-2 flex items-center hover:opacity-75" to="/ReactPortfolio/resume">Resume</Link></li>
                     </ul>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFileAlt } from 'react-icons/fa';
 import { BsFillEnvelopeFill } from "react-icons/bs";
 
 function Footer() {
@@ -12,8 +12,8 @@ function Footer() {
                 <a class="mx-3" href='https://github.com/treavorwills' target="_blank">
                     <FaGithub size="3em" color="black" title="Github icon link to Treavor's Github profile" />
                 </a>
-                <a class="mx-3" href='https://github.com/treavorwills' target="_blank">
-                    <BsFillEnvelopeFill size="3em" color="black" title="Envelop icon link to email Treavor" />
+                <a class="mx-3" href='https://drive.google.com/file/d/1F7RhIAIzLFN91HUsElVM5TQtI6nFoWx0/view?usp=sharing' target="_blank">
+                    <FaFileAlt size="3em" color="black" title="Envelop icon link to email Treavor" />
                 </a>
             </div>
             <div class="flex justify-center flex-wrap">
