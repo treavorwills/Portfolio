@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutCard from '../AboutCard';
+import HeaderPhoto from '../HeaderPhoto';
 
 export default function About() {
 
@@ -21,13 +22,14 @@ export default function About() {
     ]
 
     return (
-        <div class="flex flex-col mx-auto mt-5 pb-20">
-            <div class="mx-auto flex flex-col mb-5">
+        <div class="flex flex-col">
+            <HeaderPhoto></HeaderPhoto>
+            {/* <div class="mx-auto flex flex-col mb-5">
                 <img src={process.env.PUBLIC_URL + '/images/fall.png'} class="h-48 rounded-full w-full object-cover h-60 w-60"></img>
                 <div class="flex justify-center -mt-5 bg-violet-50">
                 <p class="text-4xl font-bold text-slate-800">Treavor Wills</p>
                 </div>
-            </div>
+            </div> */}
             <AboutCard aboutItems={aboutItems} />
         </div>
     );

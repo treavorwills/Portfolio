@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import HeaderPhoto from '../HeaderPhoto';
 
 
 function Contact() {
@@ -45,14 +46,17 @@ function Contact() {
   };
 
   return (
-    <div>
+    <div class="flex flex-col">
+      <HeaderPhoto></HeaderPhoto>
       {/* Form */}
       <section class="text-gray-700">
         <div class="container px-5 p-10 mx-auto">
           <div class="flex flex-col text-center w-full mb-10">
             <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">
-              Contact Me
+              If you'd like to reach me quickly, please email me at <a class="text-indigo-500">treavor.wills@gmail.com</a>
             </h1>
+            <br></br>
+            <h2 class="sm:text-3xl text-2xl font-medium title-font text-gray-900"> Thanks for visiting!</h2>
             <p class="text-red-600">{formMessage}</p>
           </div>
           <div class="lg:w-1/2 md:w-2/3 mx-auto pt-2 border-t border-slate-300">
@@ -93,7 +97,6 @@ function Contact() {
 
               </div>
               <div class="p-2 w-full border-t border-slate-300 text-center">
-                <a class="text-indigo-500">treav.wills@gmail.com</a>
                 <p class="leading-normal my-5">
                   <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">
                     Salt Lake City, UT
