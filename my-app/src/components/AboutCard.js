@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutCard(props) {
     return (
-        <div class="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center">
         {props.aboutItems.map(item => (
         <div className="p-4 shadow-md lg:max-w-lg m-5">
             <div className="space-y-2">
