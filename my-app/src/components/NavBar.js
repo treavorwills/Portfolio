@@ -9,7 +9,7 @@ function NavBar() {
         <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-emerald-200 mb-1">
             <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
                 <div className="w-full relative flex justify-between md:w-auto md:static md:block md:justify-start">
-                    <Link to="/Portfolio" className="font-bold leading-relaxed inline-block mr-4 py-2">
+                    <Link to="/" className="font-bold leading-relaxed inline-block mr-4 py-2">
                         <GrHomeRounded size="1.5em" color="black" />
                     </Link>
                     <button className="cursor-pointer text-xl px-3 py-1 leading-none border-transparent rounded md:hidden outline-none focus:outline-none" type="button" onClick={() => setNavBarOpen(!navBarOpen)}><GrMenu size="1.5em" /></button>

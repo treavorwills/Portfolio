@@ -15,4 +15,4 @@ This was also the first static site I've built using React and it was a satisfyi
 
 
 ## Deployed Site
-### [ Treavor Wills - React Portfolio ]( https://treavorwills.github.io/ )
+### [ Treavor Wills - React Portfolio ]( https://treavorwills.github.io/ReactPortfolio/ )
