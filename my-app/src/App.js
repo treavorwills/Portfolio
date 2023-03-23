@@ -14,7 +14,7 @@ function App() {
   console.log("hello");
 
   return (
-    <div class="">
+    <div className="">
       <NavBar />
     <Routes>
       <Route path="/Portfolio" element={<Home />} />
