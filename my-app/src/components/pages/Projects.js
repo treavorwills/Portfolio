@@ -62,9 +62,9 @@ function Projects() {
   ];
 
   return (
-    <div className="flex flex-col">
+    <div class="flex flex-col">
       <HeaderPhoto></HeaderPhoto>
-      <div className="pt-10 pb-20">
+      <div class="pt-10 pb-20">
         <ProjectCard projects={projects} />
       </div>
     </div>

@@ -14,14 +14,14 @@ function App() {
   console.log("hello");
 
   return (
-    <div className="">
+    <div class="">
       <NavBar />
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/resume" element={<Resume />} />
+      <Route path="/Portfolio" element={<Home />} />
+      <Route path="/Portfolio/about" element={<About />} />
+      <Route path="/Portfolio/projects" element={<Projects />} />
+      <Route path="/Portfolio/contact" element={<Contact />} />
+      <Route path="/Portfolio/resume" element={<Resume />} />
     </Routes>
     <Footer />
     </div>

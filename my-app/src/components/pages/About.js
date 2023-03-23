@@ -22,12 +22,12 @@ export default function About() {
     ]
 
     return (
-        <div className="flex flex-col">
+        <div class="flex flex-col">
             <HeaderPhoto></HeaderPhoto>
-            {/* <div className="mx-auto flex flex-col mb-5">
-                <img src={process.env.PUBLIC_URL + '/images/fall.png'} className="h-48 rounded-full w-full object-cover h-60 w-60"></img>
-                <div className="flex justify-center -mt-5 bg-violet-50">
-                <p className="text-4xl font-bold text-slate-800">Treavor Wills</p>
+            {/* <div class="mx-auto flex flex-col mb-5">
+                <img src={process.env.PUBLIC_URL + '/images/fall.png'} class="h-48 rounded-full w-full object-cover h-60 w-60"></img>
+                <div class="flex justify-center -mt-5 bg-violet-50">
+                <p class="text-4xl font-bold text-slate-800">Treavor Wills</p>
                 </div>
             </div> */}
             <AboutCard aboutItems={aboutItems} />
