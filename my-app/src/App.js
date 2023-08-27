@@ -8,6 +8,7 @@ import Contact from './components/pages/Contact';
 import Resume from './components/pages/Resume';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
+import Archive from './components/pages/Archive.js';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Route path="/Portfolio/about" element={<About />} />
       <Route path="/Portfolio/projects" element={<Projects />} />
       <Route path="/Portfolio/contact" element={<Contact />} />
+      <Route path="/Portfolio/archive" element={<Archive />} />
       <Route path="/Portfolio/resume" element={<Resume />} />
     </Routes>
     <Footer />
