@@ -19,3 +19,15 @@ code {
 html {
   background-color: #f5f3ff;
 }
+
+.navigation {
+  margin: 1rem;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation>a {
+  margin-left: 5px;
+}
