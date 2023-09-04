@@ -2,17 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --dark: #212626;
+  --orange-helmet: #D94032;
+  --green-helmet: #0DF205;
+  --green-helmet2: #0ABF04;
+  --yellow: #D9D166;
+  --lavender: #B6CAF2;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -28,6 +37,26 @@ html {
   justify-content: space-around;
 }
 
-.navigation>a {
+.navigation > a {
   margin-left: 5px;
+}
+
+.main-photo {
+  width: 100%;
+  /* max-width: 400px; Adjust this to your desired width */
+  height: auto;
+  clip-path: polygon(0% 0%, 100% 20%, 100% 80%, 0% 100%);
+}
+
+.intro-text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.name {
+  background: var(--dark);
+  color: #fff;
+  font-weight: 800;
 }
