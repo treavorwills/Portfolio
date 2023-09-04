@@ -4,18 +4,20 @@
 
 :root {
   --dark: #212626;
-  --orange-helmet: #D94032;
-  --green-helmet: #0DF205;
-  --green-helmet2: #0ABF04;
-  --yellow: #D9D166;
-  --lavender: #B6CAF2;
+  --orange-helmet: #d94032;
+  --green-helmet: #0df205;
+  --green-helmet2: #0abf04;
+  --yellow: #d9d166;
+  --lilac: #b6caf2;
+  --orange: #faaa39;
+
+  --main-font: "Assistant", sans-serif;
+  --codey-font: "IBM Plex Mono", monospace;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, var(--main-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -35,6 +37,7 @@ html {
   font-size: 1.2rem;
   display: flex;
   justify-content: space-around;
+  font-family: var(--codey-font);
 }
 
 .navigation > a {
@@ -55,7 +58,7 @@ html {
   align-items: end;
 }
 
-.name {
+.intro-text > h1 {
   background: var(--dark);
   color: #fff;
   font-weight: 800;
@@ -75,5 +78,39 @@ html {
 
 .page {
   min-height: 80vh;
+}
+
+.border {
   border: 1px solid red;
+}
+
+.project {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-title,
+.project-links > a {
+  font-weight: 600;
+  background: linear-gradient(to top, var(--orange) 35%, transparent 35%);
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.project>p {
+  width: 85vw;
+  margin: 10px;
+}
+
+.project-hr {
+  margin: 10px 0 40px;
+  width: 75vw;
+  height: 3px;
+  background: linear-gradient(to right, var(--orange), var(--orange-helmet));
+  border: none;
 }
