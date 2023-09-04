@@ -11,7 +11,7 @@ function NavBar() {
   }, [location.pathname]);
 
   return (
-    <div className="navigation">
+    <>
         {!isHome && (
           <Link
             to="/Portfolio"
@@ -37,7 +37,7 @@ function NavBar() {
         >
           Archive
         </Link>
-      </div>
+      </>
   );
 }
 

@@ -61,3 +61,19 @@ html {
   font-weight: 800;
   font-size: 2rem;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-link {
+  color: var(--dark);
+  margin: 5px;
+  font-size: 1.5rem;
+}
+
+.page {
+  min-height: 80vh;
+  border: 1px solid red;
+}
