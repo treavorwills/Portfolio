@@ -16,23 +16,23 @@ function NavBar() {
           <Link
             to="/Portfolio"
           >
-            <GrHomeRounded size="1.5em" color="black" />
+            <GrHomeRounded className="nav-link" size="1.5em" />
           </Link>
         )}
-        <Link to="/Portfolio/about">
+        <Link className="nav-link" to="/Portfolio/about">
           About
         </Link>
-        <Link
+        <Link className="nav-link"
           to="/Portfolio/projects"
         >
           Projects
         </Link>
-        <Link
+        <Link className="nav-link"
           to="/Portfolio/contact"
         >
           Contact
         </Link>
-        <Link
+        <Link className="nav-link"
           to="/Portfolio/archive"
         >
           Archive

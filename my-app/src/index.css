@@ -10,9 +10,12 @@
   --yellow: #d9d166;
   --lilac: #b6caf2;
   --orange: #faaa39;
+  --notwhite: #f5f3ff;
 
   --main-font: "Assistant", sans-serif;
   --codey-font: "IBM Plex Mono", monospace;
+
+  background: var(--notwhite);
 }
 
 body {
@@ -44,17 +47,28 @@ html {
   margin-left: 5px;
 }
 
+.main-photo-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-photo {
   width: 100%;
-  /* max-width: 400px; Adjust this to your desired width */
-  height: auto;
   clip-path: polygon(0% 0%, 100% 20%, 100% 80%, 0% 100%);
 }
 
-.intro-text, .sub-text{
-  padding: 20px;
+.reflection {
+  display: none;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.intro-text,
+.sub-text {
+  padding-right: 20px;
   display: flex;
-  justify-content: end
+  justify-content: end;
 }
 
 .intro-text {
@@ -85,13 +99,12 @@ svg {
 }
 
 .changeDescriptionBtn {
-  transition: transform .5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .changeDescriptionBtn:hover {
   transform: rotate(360deg);
 }
-
 
 .page {
   min-height: 80vh;
@@ -119,7 +132,7 @@ svg {
   margin: 10px;
 }
 
-.project>p {
+.project > p {
   width: 85vw;
   margin: 10px;
 }
@@ -130,4 +143,194 @@ svg {
   height: 3px;
   background: linear-gradient(to right, var(--orange), var(--orange-helmet));
   border: none;
+}
+
+@media (min-width: 480px) {
+  /* Home */
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro-text {
+    order: 1;
+    flex-direction: row;
+  }
+  .intro-text > h1 {
+    margin-right: 2px;
+  }
+  .sub-text {
+    order: 2;
+  }
+  .main-photo-container {
+    order: 3;
+  }
+  .main-photo {
+    clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+  }
+  .reflection {
+    display: block;
+    transform: scaleY(-1);
+    transform-origin: center;
+    mask-image: radial-gradient(
+      circle at bottom,
+      var(--notwhite),
+      transparent 55%
+    );
+  }
+}
+
+@media (min-width: 610px) {
+  .intro-text > h1 {
+    font-size: 2.5rem;
+  }
+  .intro-text > p,
+  .sub-text > p {
+    font-size: 1.5rem;
+  }
+  .reflection {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Home */
+  .home {
+    background: var(--dark);
+  }
+  .intro-text > h1 {
+    font-size: 3rem;
+  }
+  .intro-text > p,
+  .sub-text > p {
+    font-size: 2rem;
+  }
+  .main-photo {
+    filter: grayscale(100%);
+  }
+  .intro-text > h1 {
+    background: var(--green-helmet2);
+  }
+  .intro-text > p,
+  .sub-text {
+    color: var(--green-helmet2);
+  }
+  /* Navigation */
+  .nav-link,
+  .nav-link > path {
+    color: var(--orange-helmet);
+    stroke: var(--orange-helmet);
+  }
+}
+
+@media (min-width: 900px) {
+  .home {
+    background: var(--notwhite);
+  }
+  .intro-text > h1 {
+    font-size: 3.2rem;
+  }
+  .intro-text > p {
+    font-size: 2.2rem;
+  }
+  .sub-text > p {
+    font-size: 2rem;
+  }
+  .main-photo {
+    filter: grayscale(0%);
+    width: 75vw;
+  }
+  .main-photo-container {
+    background: repeating-linear-gradient(
+      0deg,
+      var(--dark),
+      var(--dark) 10px,
+      var(--notwhite) 10px,
+      var(--notwhite) 20px
+    );
+  }
+  .intro-text > h1 {
+    background: var(--dark);
+  }
+  .intro-text > p,
+  .sub-text {
+    color: var(--dark);
+  }
+  /* Navigation */
+  .nav-link,
+  .nav-link > path {
+    color: var(--dark);
+    stroke: var(--dark);
+  }
+}
+
+@media (min-width: 1024px) {
+  /* home */
+  .main-photo-container {
+    display: none;
+  }
+  .home {
+    background-image: url("../public/images/tvc.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    justify-content: space-between;
+  }
+  .intro-text > h1 {
+    font-size: 5.2rem;
+    margin-right: 0px;
+  }
+  .intro-text {
+    flex-direction: column;
+  }
+  .intro-text > p,
+  .sub-text > p {
+    background: var(--dark);
+    color: var(--notwhite);
+  }
+}
+@media (min-width: 1280px) {
+  .intro-text > h1 {
+    font-weight: bold;
+    font-size: 4rem;
+  }
+  .intro-text > p,
+  .sub-text > p {
+    font-size: 1.5rem;
+  }
+
+  element.style {
+  }
+  @media (min-width: 1024px) .intro-text {
+    flex-direction: column;
+  }
+  @media (min-width: 480px) .intro-text {
+    order: 1;
+    flex-direction: row;
+  }
+  .intro-text {
+    flex-direction: column;
+    align-items: end;
+  }
+  .intro-text,
+  .sub-text {
+    padding-right: 0px;
+  }
+  .home {
+    background: none;
+    background-position: center;
+    width: 60vw;
+    margin: auto;
+  }
+  .main-photo-container {
+    background: none;
+    display: block;
+  }
+  .intro-text>p, .sub-text>p {
+    background: none;
+    color: var(--dark);
+  }
+  .intro-text {
+    flex-direction: row;
+  }
 }
