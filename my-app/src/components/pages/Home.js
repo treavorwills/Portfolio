@@ -7,11 +7,12 @@ function Home() {
 
   const descriptions = [
     "with the beard",
-    "between my two kids",
+    "between his two kids",
     "who is old",
     "who pays for everything",
-    "without facepaint",
-    "who controls the thermostat"
+    "without face paint",
+    "who controls the thermostat",
+    "snapping the selfie"
   ];
 
   const incrementArray = () => {
@@ -40,7 +41,7 @@ function Home() {
       </section>
       <div className="sub-text">
         <p>
-          I'm the one {description}<button className="changeDescriptionBtn" onClick={incrementArray}><AiOutlineReload></AiOutlineReload></button>
+          the one {description}<button className="changeDescriptionBtn" onClick={incrementArray}><AiOutlineReload></AiOutlineReload></button>
         </p>
       </div>
     </section>
