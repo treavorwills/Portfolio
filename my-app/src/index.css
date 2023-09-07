@@ -177,6 +177,18 @@ svg {
       transparent 55%
     );
   }
+
+  /* projects */
+  .project-photo-anchor {
+    width: 100vw;
+    height: 300px;
+    overflow: hidden;
+  }
+  .project-photo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
 
 @media (min-width: 610px) {
@@ -219,6 +231,14 @@ svg {
   .nav-link > path {
     color: var(--orange-helmet);
     stroke: var(--orange-helmet);
+  }
+
+  /* projects */
+  .project-photo-anchor, .project>p {
+    width: 75vw;
+  }
+  .project-hr {
+    width: 50vw;
   }
 }
 
@@ -283,13 +303,21 @@ svg {
   .intro-text {
     flex-direction: column;
   }
-  .intro-text, .sub-text {
+  .intro-text,
+  .sub-text {
     padding-right: 0px;
   }
   .intro-text > p,
   .sub-text > p {
     background: var(--dark);
     color: var(--notwhite);
+  }
+   /* projects */
+   .project-photo-anchor, .project>p  {
+    width: 65vw;
+  }  
+  .project-hr {
+    width: 45vw;
   }
 }
 
@@ -301,5 +329,11 @@ svg {
   .intro-text > p,
   .sub-text > p {
     font-size: 1.5rem;
+  }
+  .project-photo-anchor, .project>p  {
+    width: 45vw;
+  }  
+  .project-hr {
+    width: 30vw;
   }
 }
