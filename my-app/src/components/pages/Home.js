@@ -7,10 +7,10 @@ function Home() {
 
   const descriptions = [
     "with the beard",
-    "between his two kids",
-    "who is old",
+    "between the kids",
     "who pays for everything",
     "without face paint",
+    "who is old",
     "who controls the thermostat",
     "snapping the selfie"
   ];

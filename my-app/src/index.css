@@ -4,12 +4,17 @@
 
 :root {
   --dark: #212626;
+  --dark-trans: rgba(33, 38, 38, .8);
   --orange-helmet: #d94032;
+  --orange-helmet-trans: rgba(217,64,50,.8);
   --green-helmet: #0df205;
+  --green-helmet-trans: rgba(13,242,5,.8);
   --green-helmet2: #0abf04;
+  --green-helmet2-trans: rgba(10,191,4,.8);
   --yellow: #d9d166;
+  --yellow-trans: rgba(217,209,102,.8);
   --lilac: #b6caf2;
-  --orange: #faaa39;
+  --link: rgba(250, 170, 57, 0.8);
   --notwhite: #f5f3ff;
 
   --main-font: "Assistant", sans-serif;
@@ -124,7 +129,7 @@ svg {
 .project-title,
 .project-links > a {
   font-weight: 600;
-  background: linear-gradient(to top, var(--orange) 35%, transparent 35%);
+  background: linear-gradient(to top, var(--link) 35%, transparent 35%);
 }
 
 .project-title {
@@ -141,7 +146,7 @@ svg {
   margin: 10px 0 40px;
   width: 75vw;
   height: 3px;
-  background: linear-gradient(to right, var(--orange), var(--orange-helmet));
+  background: linear-gradient(to right, var(--link), var(--orange-helmet));
   border: none;
 }
 
@@ -154,6 +159,7 @@ svg {
   .intro-text {
     order: 1;
     flex-direction: row;
+    align-items: baseline;
   }
   .intro-text > h1 {
     margin-right: 2px;
@@ -287,15 +293,20 @@ svg {
 @media (min-width: 1024px) {
   /* home */
   .home {
-    background: repeating-linear-gradient(
-      45deg,
-      var(--dark),
-      var(--dark) 15px,
-      grey 15px,
-      grey 30px
-    );
+    background-color: var(--orange-helmet);
+    background-image: 
+    radial-gradient(ellipse at center, transparent 50%, rgba(0, 0, 0, 0.5) 100% ),
+    linear-gradient(75deg, var(--green-helmet-trans) 10%, transparent 5%),
+    linear-gradient(120deg, var(--dark-trans) 20%, transparent 10%),
+    linear-gradient(150deg, var(--dark-trans) 40%, transparent 20%),
+    linear-gradient(67deg, var(--dark-trans) 70%, transparent 20%),
+    linear-gradient(170deg, var(--notwhite) 60%, transparent 10%);
+
     padding-right: 10vw;
     padding-left: 10vw;
+  }
+  .main-photo {
+    /* filter: grayscale(100%); */
   }
   .main-photo-container {
     display: block;
@@ -307,12 +318,13 @@ svg {
   }
   .intro-text > p,
   .sub-text > p {
-    background: var(--dark);
+    background: var(--dark-trans);
     color: var(--green-helmet);
   }
   .intro-text > h1 {
+    background: none;
     font-size: 3.5rem;
-    margin-right: 0px;
+    margin-right: 10px;
     color: var(--orange-helmet);
   }
   /* projects */
@@ -330,7 +342,6 @@ svg {
     font-weight: bold;
     font-size: 4.5rem;
     color: var(--notwhite);
-    background-color: var(--orange-helmet);
   }
   .intro-text > p,
   .sub-text > p {
