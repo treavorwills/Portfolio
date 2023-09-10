@@ -48,6 +48,10 @@ code {
   margin-left: 5px;
 }
 
+.nav-link:hover {
+  background: linear-gradient(to top, var(--link) 35%, transparent 35%);
+}
+
 .main-photo-container {
   display: flex;
   flex-direction: column;
