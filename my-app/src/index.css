@@ -4,15 +4,15 @@
 
 :root {
   --dark: #212626;
-  --dark-trans: rgba(33, 38, 38, .8);
+  --dark-trans: rgba(33, 38, 38, 0.8);
   --orange-helmet: #d94032;
-  --orange-helmet-trans: rgba(217,64,50,.8);
+  --orange-helmet-trans: rgba(217, 64, 50, 0.8);
   --green-helmet: #0df205;
-  --green-helmet-trans: rgba(13,242,5,.8);
+  --green-helmet-trans: rgba(13, 242, 5, 0.8);
   --green-helmet2: #0abf04;
-  --green-helmet2-trans: rgba(10,191,4,.8);
+  --green-helmet2-trans: rgba(10, 191, 4, 0.8);
   --yellow: #d9d166;
-  --yellow-trans: rgba(217,209,102,.8);
+  --yellow-trans: rgba(217, 209, 102, 0.8);
   --lilac: #b6caf2;
   --link: rgba(250, 170, 57, 0.8);
   --notwhite: #f5f3ff;
@@ -35,13 +35,9 @@ code {
     monospace;
 }
 
-html {
-  background-color: #f5f3ff;
-}
-
 .navigation {
   margin: 1rem;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   font-size: 1.2rem;
   display: flex;
   justify-content: space-around;
@@ -108,7 +104,7 @@ svg {
 .header-name {
   font-weight: 900;
   font-size: 2rem;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
 }
 
 .footer {
@@ -128,10 +124,6 @@ svg {
 
 .changeDescriptionBtn:hover {
   transform: rotate(360deg);
-}
-
-.page {
-  min-height: 80vh;
 }
 
 .border {
@@ -167,6 +159,35 @@ svg {
   height: 3px;
   background: linear-gradient(to right, var(--link), var(--orange-helmet));
   border: none;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: [about-start] minmax(1em, 1fr) [middle-start] minmax(
+      0,
+      30em
+    ) [middle-end] minmax(1em, 1fr) [about-end];
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+.about > p,
+.about > .project-hr {
+  grid-column: middle;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.about > img {
+  border-radius: 9999px;
+  grid-column: about;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  margin: 30px auto;
+  height: 20rem;
+  width: 20rem;
 }
 
 @media (min-width: 480px) {
@@ -323,13 +344,16 @@ svg {
   /* home */
   .home {
     background-color: var(--orange-helmet);
-    background-image: 
-    radial-gradient(ellipse at center, transparent 50%, rgba(0, 0, 0, 0.5) 100% ),
-    linear-gradient(75deg, var(--green-helmet-trans) 10%, transparent 5%),
-    linear-gradient(120deg, var(--dark-trans) 20%, transparent 10%),
-    linear-gradient(150deg, var(--dark-trans) 40%, transparent 20%),
-    linear-gradient(67deg, var(--dark-trans) 70%, transparent 20%),
-    linear-gradient(170deg, var(--notwhite) 60%, transparent 10%);
+    background-image: radial-gradient(
+        ellipse at center,
+        transparent 50%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      linear-gradient(75deg, var(--green-helmet-trans) 10%, transparent 5%),
+      linear-gradient(120deg, var(--dark-trans) 20%, transparent 10%),
+      linear-gradient(150deg, var(--dark-trans) 40%, transparent 20%),
+      linear-gradient(67deg, var(--dark-trans) 70%, transparent 20%),
+      linear-gradient(170deg, var(--notwhite) 60%, transparent 10%);
 
     padding-right: 10vw;
     padding-left: 10vw;
