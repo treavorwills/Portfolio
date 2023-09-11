@@ -7,7 +7,6 @@ export default function Archive() {
       <HeaderPhoto page="Archive"></HeaderPhoto>
       <section className="archive">
         <header className="archive-header">
-          <h1>Treavor Wills | Archive</h1>
           <p>
             I came back to update my portfolio a year after I made it. Instead
             of trashing the old repository and making a new one, I decided to

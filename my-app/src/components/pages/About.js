@@ -1,5 +1,4 @@
 import React from "react";
-import AboutCard from "../AboutCard";
 import HeaderPhoto from "../HeaderPhoto";
 
 export default function About() {
