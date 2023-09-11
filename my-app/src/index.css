@@ -52,6 +52,16 @@ code {
   background: linear-gradient(to top, var(--link) 35%, transparent 35%);
 }
 
+.active-nav-link {
+  background: var(--dark);
+  color: var(--notwhite);
+}
+.active-nav-link:hover {
+  background: var(--dark);
+  color: var(--notwhite);
+  background: linear-gradient(to top, var(--link) 35%, var(--dark) 35%);
+}
+
 .main-photo-container {
   display: flex;
   flex-direction: column;
@@ -341,6 +351,15 @@ svg {
   .nav-link > path {
     color: var(--dark);
     stroke: var(--dark);
+  }
+  .active-nav-link {
+    background: var(--dark);
+    color: var(--notwhite);
+  }
+  .active-nav-link:hover {
+    background: var(--dark);
+    color: var(--notwhite);
+    background: linear-gradient(to top, var(--link) 35%, var(--dark) 35%);
   }
 }
 

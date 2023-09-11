@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { GrHomeRounded } from "react-icons/gr";
 
 function NavBar() {
@@ -13,30 +13,38 @@ function NavBar() {
   return (
     <>
         {!isHome && (
-          <Link
+          <NavLink
             to="/Portfolio"
           >
             <GrHomeRounded className="nav-link" size="1.5em" />
-          </Link>
+          </NavLink>
         )}
-        <Link className="nav-link" to="/Portfolio/about">
+        <NavLink className={({ isActive }) =>
+            isActive ? 'active-nav-link nav-link' : 'nav-link'
+          } to="/Portfolio/about">
           About
-        </Link>
-        <Link className="nav-link"
+        </NavLink>
+        <NavLink className={({ isActive }) =>
+            isActive ? 'active-nav-link nav-link' : 'nav-link'
+          }
           to="/Portfolio/projects"
         >
           Projects
-        </Link>
-        <Link className="nav-link"
+        </NavLink>
+        <NavLink className={({ isActive }) =>
+            isActive ? 'active-nav-link nav-link' : 'nav-link'
+          }
           to="/Portfolio/contact"
         >
           Contact
-        </Link>
-        <Link className="nav-link"
+        </NavLink>
+        <NavLink className={({ isActive }) =>
+            isActive ? 'active-nav-link nav-link' : 'nav-link'
+          }
           to="/Portfolio/archive"
         >
           Archive
-        </Link>
+        </NavLink>
       </>
   );
 }
