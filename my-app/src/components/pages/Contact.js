@@ -47,7 +47,7 @@ function Contact() {
 
   return (
     <div className="flex flex-col">
-      <HeaderPhoto></HeaderPhoto>
+      <HeaderPhoto page='Contact'></HeaderPhoto>
       {/* Form */}
       <section className="text-gray-700">
         <div className="container px-5 p-10 mx-auto">

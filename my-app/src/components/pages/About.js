@@ -4,8 +4,9 @@ import HeaderPhoto from "../HeaderPhoto";
 
 export default function About() {
   return (
+    <>
+      <HeaderPhoto page='About'></HeaderPhoto>
     <section className="about">
-      <img src={process.env.PUBLIC_URL + "/images/tvc2.png"} className=""></img>
       <p>
         My name is <strong>Treavor Wills</strong> and here is a little bit about
         me.
@@ -48,5 +49,6 @@ export default function About() {
       </p>
       <hr className="project-hr"></hr>
     </section>
+    </>
   );
 }
