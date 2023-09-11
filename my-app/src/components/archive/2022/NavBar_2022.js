@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { GrHomeRounded, GrMenu } from "react-icons/gr";
 
 
-function NavBar() {
+function NavBar_2022() {
     const [navBarOpen, setNavBarOpen] = React.useState(false);
     return (
         <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-emerald-200 mb-1">
@@ -16,10 +16,10 @@ function NavBar() {
                 </div>
                 <div className={"md:flex items-center" + (navBarOpen ? "flex ml-auto" : " hidden")}>
                     <ul className="flex flex-col md:flex-row list-none md:ml-auto">
-                        <li className="nav-item flex justify-end"><Link className="px-3 py-2 hover:opacity-75" to="/Portfolio/about">About</Link></li>
-                        <li className="nav-item flex justify-end"><Link className="px-3 py-2 flex items-center hover:opacity-75" to="/Portfolio/projects">Projects</Link></li>
-                        <li className="nav-item flex justify-end"><Link className="px-3 py-2 flex items-center hover:opacity-75" to="/Portfolio/contact">Contact</Link></li>
-                        <li className="nav-item flex justify-end"><Link className="px-3 py-2 flex items-center hover:opacity-75" to="/Portfolio/resume">Resume</Link></li>
+                        <li className="nav-item flex justify-end"><Link className="px-3 py-2 hover:opacity-75" to="/Portfolio/archive/2022/about">About</Link></li>
+                        <li className="nav-item flex justify-end"><Link className="px-3 py-2 flex items-center hover:opacity-75" to="/Portfolio/archive/2022/projects">Projects</Link></li>
+                        <li className="nav-item flex justify-end"><Link className="px-3 py-2 flex items-center hover:opacity-75" to="/Portfolio/archive/2022/contact">Contact</Link></li>
+                        <li className="nav-item flex justify-end"><Link className="px-3 py-2 flex items-center hover:opacity-75" to="/Portfolio/archive/2022/resume">Resume</Link></li>
                     </ul>
                 </div>
             </div>
@@ -27,4 +27,4 @@ function NavBar() {
     );
 }
 
-export default NavBar;
+export default NavBar_2022;

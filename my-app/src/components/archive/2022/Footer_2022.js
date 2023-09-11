@@ -2,7 +2,7 @@ import React from 'react';
 import { FaGithub, FaLinkedin, FaFileAlt } from 'react-icons/fa';
 import { BsFillEnvelopeFill } from "react-icons/bs";
 
-function Footer() {
+function Footer_2022() {
     return (
         <div className="bg-emerald-500 fixed bottom-0 right-0 left-0 flex flex-col pt-2 rounded-md m-2">
             <div className="flex flex-wrap justify-center">
@@ -23,4 +23,4 @@ function Footer() {
     );
 }
 
-export default Footer;
+export default Footer_2022;

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function AboutCard(props) {
+export default function AboutCard_2022(props) {
     return (
         <div className="flex flex-wrap justify-center">
         {props.aboutItems.map(item => (

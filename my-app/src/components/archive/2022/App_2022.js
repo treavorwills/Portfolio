@@ -1,36 +1,36 @@
-import "./App.css";
+import "./App_2022.css";
 import React from "react";
 import { Route, Routes, Link } from "react-router-dom";
-import Home from "./components/pages/Home";
-import About from "./components/pages/About";
-import Projects from "./components/pages/Projects.js";
-import Contact from "./components/pages/Contact";
-import Resume from "./components/pages/Resume";
-import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
-import Archive from "./components/pages/Archive.js";
+import Home_2022 from "./Home_2022";
+import About_2022 from "./About_2022";
+import Projects_2022 from "./Projects_2022";
+import Contact_2022 from "./Contact_2022";
+import Resume_2022 from "./Resume_2022";
+import Footer_2022 from "./Footer_2022";
+import NavBar_2022 from "./NavBar_2022";
+import Archive from "./Archive.js";
 
-function App() {
+function Index_2022() {
   console.log("hello");
 
   return (
     <>
       <div className="navigation">
-        <NavBar />
+        <NavBar_2022 />
       </div>
         <Routes>
-          <Route path="/Portfolio" element={<Home />} />
-          <Route path="/Portfolio/about" element={<About />} />
-          <Route path="/Portfolio/projects" element={<Projects />} />
-          <Route path="/Portfolio/contact" element={<Contact />} />
+          <Route path="/Portfolio/archive/2022_2022" element={<Home_2022 />} />
+          <Route path="/Portfolio/archive/about_2022" element={<About_2022 />} />
+          <Route path="/Portfolio/archive/projects_2022" element={<Projects_2022 />} />
+          <Route path="/Portfolio/archive/contact_2022" element={<Contact_2022 />} />
           <Route path="/Portfolio/archive" element={<Archive />} />
-          <Route path="/Portfolio/resume" element={<Resume />} />
+          <Route path="/Portfolio/archive/resume_2022" element={<Resume_2022 />} />
         </Routes>
       <div className="footer">
-        <Footer />
+        <Footer_2022 />
       </div>
     </>
   );
 }
 
-export default App;
+export default Index_2022;

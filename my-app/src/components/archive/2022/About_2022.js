@@ -1,8 +1,8 @@
 import React from 'react';
-import AboutCard from '../../AboutCard_2022';
-import HeaderPhoto from '../../HeaderPhoto';
+import AboutCard_2022 from './AboutCard_2022';
+import HeaderPhoto_2022 from './HeaderPhoto_2022';
 
-export default function About() {
+export default function About_2022() {
 
     const aboutItems = [
         {
@@ -23,14 +23,14 @@ export default function About() {
 
     return (
         <div className="flex flex-col">
-            <HeaderPhoto></HeaderPhoto>
-            {/* <div className="mx-auto flex flex-col mb-5">
+            <HeaderPhoto_2022></HeaderPhoto_2022>
+            <div className="mx-auto flex flex-col mb-5">
                 <img src={process.env.PUBLIC_URL + '/images/fall.png'} className="h-48 rounded-full w-full object-cover h-60 w-60"></img>
                 <div className="flex justify-center -mt-5 bg-violet-50">
                 <p className="text-4xl font-bold text-slate-800">Treavor Wills</p>
                 </div>
-            </div> */}
-            <AboutCard aboutItems={aboutItems} />
+            </div>
+            <AboutCard_2022 aboutItems={aboutItems} />
         </div>
     );
 }

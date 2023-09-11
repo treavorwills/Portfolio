@@ -17,15 +17,14 @@ export default function Archive() {
           <p>Maybe you'll click and get a kick out of it?</p>
         </header>
         <div className="archive-content">
-          <div className="archive-site" id="2023">
-            <a href="#" className="year">2023</a>
-            <img srcSet={process.env.PUBLIC_URL + "/images/archive-sites/site_2023.png"} alt=""/>
-            <a href="#" className="notes">Notes</a></div>
-          <div className="archive-site" id="2022">
-            <a href="#" className="year">2022</a>
-            <img srcSet={process.env.PUBLIC_URL + "/images/archive-sites/site_2022.png"} alt=""/>
-            <a href="#" className="notes">Notes</a>
-          </div>
+            <div className="archive-site" id="2023">
+                <a href="../Portfolio" className="year">2023</a>
+                <a href="../Portfolio" className="image"><img srcSet={process.env.PUBLIC_URL + "/images/archive-sites/site_2023.png"} alt=""/></a>
+                <a href="#" className="notes">Notes</a></div>
+            <div className="archive-site" id="2022">
+                <a href="./archive/2022" className="year">2022</a>
+                <a href="./archive/2022" className="image"><img srcSet={process.env.PUBLIC_URL + "/images/archive-sites/site_2022.png"} alt=""/></a>
+                <a href="#" className="notes">Notes</a></div>
         </div>
       </section>
     </>

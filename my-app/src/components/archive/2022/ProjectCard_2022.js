@@ -3,7 +3,7 @@ import { TbExternalLink } from "react-icons/tb";
 import { FaGithub } from 'react-icons/fa';
 
 
-export default function ProjectCard(props) {
+export default function ProjectCard_2022(props) {
     return (
         <div className="flex flex-wrap mt-1">
             {props.projects.map(project => (

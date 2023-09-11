@@ -1,7 +1,13 @@
 import React from 'react';
+import Footer_2022 from "./Footer_2022";
+import NavBar_2022 from "./NavBar_2022";
 
-function Home() {
+function Home_2022() {
     return (
+        <>
+        <div className="navigation">
+        <NavBar_2022 />
+      </div>
         <div className="pt-10">
             <div className="flex flex-col-reverse md:flex-row text-2xl justify-center">
                 <div className="p-10 flex flex-col justify-items-end">
@@ -13,7 +19,11 @@ function Home() {
                 </div>
             </div>
         </div>
+        <div className="footer">
+        <Footer_2022 />
+      </div>
+        </>
     );
 }
 
-export default Home;
+export default Home_2022;
