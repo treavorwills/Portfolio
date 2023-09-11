@@ -229,10 +229,13 @@ code {
   width: 70vw;
   margin-bottom: 20px;
 }
+.archive-header>p {
+  margin-bottom: 15px;
+}
 .archive-content {
   width: 90vw;
   display: grid;
-  grid-template-columns: [archive-start] 1fr [middle-start] 1fr [middle-end] 1fr [archive-end]; 
+  grid-template-columns: 1fr; 
 }
 .archive-site {
   display: flex;
@@ -311,6 +314,9 @@ code {
   }
   .reflection {
     display: none;
+  }
+  .archive-content {
+    grid-template-columns: 1fr 1fr; 
   }
 }
 
@@ -401,6 +407,9 @@ code {
   .active-nav-link:hover {
     background: var(--dark);
     color: var(--notwhite);
+  }
+  .archive-content {
+    grid-template-columns: 1fr 1fr 1fr; 
   }
 }
 
