@@ -16,11 +16,12 @@
   --lilac: #b6caf2;
   --link: rgba(250, 170, 57, 0.8);
   --notwhite: #f5f3ff;
+  --white: #ffffff;
 
   --main-font: "Assistant", sans-serif;
   --codey-font: "IBM Plex Mono", monospace;
 
-  background: var(--notwhite);
+  background: var(--white);
 }
 
 body {
@@ -356,7 +357,7 @@ code {
 
 @media (min-width: 900px) {
   .home {
-    background: var(--notwhite);
+    background: var(--white);
   }
   .intro-text > h1 {
     font-size: 3.2rem;

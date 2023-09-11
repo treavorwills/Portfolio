@@ -4,7 +4,7 @@ export default function ProjectCard(props) {
   return (
     <>
       {props.projects.map((project) => (
-        <div className="project">
+        <div className="project" key={project.id}>
           <a className="project-title" href={project.appLink} target="_blank">
             {project.title}
           </a>
