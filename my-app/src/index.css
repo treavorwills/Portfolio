@@ -194,6 +194,9 @@ code {
     ) [middle-end] minmax(1em, 1fr) [about-end];
   max-width: 800px;
   margin: 0 auto 30px;
+  /* font-family: var(--codey-font); */
+  font-weight: 500;
+  line-height: 1.75;
 }
 .about > p,
 .about > .project-hr {

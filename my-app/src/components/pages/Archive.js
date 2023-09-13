@@ -27,7 +27,6 @@ export default function Archive() {
                 <a href="#" className="notes">Notes</a></div>
         </div>
       <hr className="project-hr"></hr>
-
       </section>
     </>
   );

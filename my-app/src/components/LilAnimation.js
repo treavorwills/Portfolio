@@ -6,6 +6,9 @@ export default function LilAnimation() {
     const [leftPosition, setLeftPosition] = useState(window.innerWidth/2);
     const [bottomPosition, setBottomPosition] = useState(0);
 
+    console.log(`Math is fun.`);
+
+
     useEffect(() => {
         const handleMouseMove = (e) => {
           setLeftPosition(e.clientX);
@@ -17,7 +20,6 @@ export default function LilAnimation() {
 
     
         document.addEventListener('mousemove', handleMouseMove);
-        return (console.log(`Math is fun.`))
       }, []);
 
     return (
