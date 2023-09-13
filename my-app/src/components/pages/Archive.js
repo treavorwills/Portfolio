@@ -26,6 +26,8 @@ export default function Archive() {
                 <a href="./archive/2022" className="image"><img srcSet={process.env.PUBLIC_URL + "/images/archive-sites/site_2022.png"} alt=""/></a>
                 <a href="#" className="notes">Notes</a></div>
         </div>
+      <hr className="project-hr"></hr>
+
       </section>
     </>
   );

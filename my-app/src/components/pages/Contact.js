@@ -37,6 +37,7 @@ export default function Contact() {
           </a>
         </section>
         <LilAnimation></LilAnimation>
+      <hr className="project-hr"></hr>
       </section>
     </>
   );

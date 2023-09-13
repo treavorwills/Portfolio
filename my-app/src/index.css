@@ -179,7 +179,7 @@ code {
 }
 
 .project-hr {
-  margin: 10px 0 40px;
+  margin: 35px 0 40px;
   width: 75vw;
   height: 3px;
   background: linear-gradient(to right, var(--link), var(--orange-helmet));
