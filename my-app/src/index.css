@@ -247,6 +247,22 @@ code {
   height: 175px; 
   object-fit: cover; 
 }
+
+.animation-track {
+  position: relative;
+  width: 100vw;
+  height: 50px;
+}
+
+.animation-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  transition: transform 0.2s ease-out;
+}
+
+
 @media (min-width: 480px) {
   /* Home */
   .home {
