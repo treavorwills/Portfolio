@@ -11,7 +11,7 @@ export default function LilAnimation() {
           setLeftPosition(e.clientX);
 
           const amplitude = 10; 
-          const frequency = 0.01; // Controls how quickly the wave moves
+          const frequency = 0.01; 
           setBottomPosition(amplitude * Math.sin(frequency * e.clientX));
         };
 
