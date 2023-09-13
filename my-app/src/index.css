@@ -269,6 +269,16 @@ code {
   font-size: 2rem;  
 }
 
+.project-photo-anchor {
+  width: 100vw;
+  height: 200px;
+  overflow: hidden;
+}
+.project-photo {
+  width: 100%;
+  object-fit: cover;
+}
+
 
 @media (min-width: 480px) {
   /* Home */
@@ -304,18 +314,6 @@ code {
     );
   }
 
-  /* projects */
-  .project-photo-anchor {
-    width: 100vw;
-    height: 300px;
-    overflow: hidden;
-  }
-  .project-photo {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
   /* Header */
   .header-photo {
     height: 10rem;
@@ -325,6 +323,10 @@ code {
     font-size: 3rem;
     padding-left: 1rem;
   }
+}
+
+.project-photo-anchor {
+  height: 300px;
 }
 
 @media (min-width: 610px) {

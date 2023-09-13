@@ -28,7 +28,7 @@ export default function About() {
         .
       </p>
       <p>
-        But, jokes aside, my journey has been quite diverse. I hold a <strong>bachelor's degree</strong> in applied math, complemented by a <strong>bootcamp certificate</strong> in web development, and underpinned by an unwavering commitment to <strong>hard work</strong>. My professional experience is in sales, process improvement, and customer support. I also enjoyed a small but rewarding stint a
+        But, jokes aside, my journey has been quite diverse. I hold a <strong>bachelor's degree</strong> in applied math, complemented by a <strong>bootcamp certificate</strong> in web development, both underpinned by an unwavering commitment to <strong>hard work</strong>. My professional experience is in sales, process improvement, and customer support. I also enjoyed a small but rewarding stint a
         stay-at-home dad. These experiences have equipped me with a unique
         blend of analytical thinking, problem-solving skills, and the ability to
         tackle new challenges head-on.

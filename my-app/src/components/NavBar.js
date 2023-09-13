@@ -7,7 +7,7 @@ function NavBar() {
   const [isHome, setIsHome] = useState(true);
 
   useEffect(() => {
-    setIsHome(location.pathname === "/Portfolio");
+    setIsHome(location.pathname === "/Portfolio" || location.pathname === '/Portfolio/');
   }, [location.pathname]);
 
   return (
