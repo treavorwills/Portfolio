@@ -41,7 +41,7 @@ code {
   align-items: center;
   min-height: 50vh;
 }
-.tags {
+.contact>p, .tags {
   margin: 20px;
   display: flex;
   flex-wrap: wrap;

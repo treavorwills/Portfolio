@@ -22,7 +22,7 @@ export default function LilAnimation() {
 
     return (
         <>
-        <section className="animation-track border">
+        <section className="animation-track">
             <div className="animation-icon" style={{ left: `${leftPosition}px`, bottom: `${bottomPosition}px`}}>
                 <TbBike className="bike"></TbBike>
             </div>
