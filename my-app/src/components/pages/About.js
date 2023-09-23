@@ -43,6 +43,7 @@ export default function About() {
         restaurants I visit on the regular and I always enjoy discovering new
         favorites. My family keeps me on my toes and serves as <strong><em>daily motivation</em></strong> to be the best me.{" "}
       </p>
+      <p>Thanks for visiting!</p>
       <hr className="project-hr"></hr>
     </section>
     </>
