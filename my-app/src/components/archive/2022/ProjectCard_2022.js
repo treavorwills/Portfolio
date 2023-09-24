@@ -7,7 +7,7 @@ export default function ProjectCard_2022(props) {
     return (
         <div className="flex flex-wrap mt-1">
             {props.projects.map(project => (
-                <div className="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-lg m-5">
+                <div className="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-lg m-5" key={project.id}>
                     <div className="md:flex">
                         <div className="md:shrink-0">
                             <img className="h-48 w-full object-cover md:h-full md:w-48" src={project.src} alt={project.alt}></img>

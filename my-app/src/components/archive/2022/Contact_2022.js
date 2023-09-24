@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../../utils/helpers';
-import HeaderPhoto from '../../HeaderPhoto';
+import HeaderPhoto_2022 from './HeaderPhoto_2022';
+import NavBar_2022 from "./NavBar_2022";
+import Footer_2022 from "./Footer_2022";
 
 
-function Contact() {
+
+function Contact_2022() {
 
   // Creating state variables for email, message and name
   const [email, setEmail] = useState('');
@@ -47,7 +50,8 @@ function Contact() {
 
   return (
     <div className="flex flex-col">
-      <HeaderPhoto page='Contact'></HeaderPhoto>
+      <NavBar_2022 />
+      <HeaderPhoto_2022 />
       {/* Form */}
       <section className="text-gray-700">
         <div className="container px-5 p-10 mx-auto">
@@ -123,8 +127,9 @@ function Contact() {
         </div>
       ) : null}
       {/* End Modal */}
+      <Footer_2022 />
     </div>
   );
 }
 
-export default Contact;
+export default Contact_2022;

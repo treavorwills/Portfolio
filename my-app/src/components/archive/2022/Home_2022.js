@@ -5,7 +5,7 @@ import NavBar_2022 from "./NavBar_2022";
 function Home_2022() {
     return (
         <>
-        <div className="navigation">
+        <div className="navigation-2022">
         <NavBar_2022 />
       </div>
         <div className="pt-10">
